@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-image: url(../img/st-james-church.jpg);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.overlay {
+  background: linear-gradient(to right, rgba(55,31,56,0.5), rgba(141,11,59,0.5)), url("../img/robot_ace2015.jpg");
+  background-size: cover;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  max-width: 720px;
+  padding: 0 1em;
+  display: block;
+  margin: 0 auto;
+}
+
+.welcome {
+  width: 100%;
+  margin: 6em 0;
+}
+
+.welcome img {
+  display: block;
+  margin: 0 auto;
+  width: 25%;
+  margin-bottom: 2em;
+}
+
+.welcome h1 {
+  color: white;
+  text-align: center;
+  font-family: "Rancho", "Open Sans", sans-serif;
+  font-size: 3em;
+}
+
+.box {
+  background: white;
+  color: black;
+  padding: 3em;
+  border-radius: 5px;
+  margin-bottom: 2em;
+}
+
+h2 {
+  margin-bottom: 1em;
+}
+
+h3 {
+  margin: 1em 0;
+}
+
+.box * {
+  line-height: 1.5;
+}
+
+.box li {
+  margin-bottom: 1em;
+  margin-left: 1.25em;
+  padding-left: 0.5em;
+}
+
+.box p {
+  margin-bottom: 1em;
+}
+
+.box b a {
+  border-bottom: none;
+  padding: 0;
+  background: rgb(141,11,59);
+  color: white;
+  display: block;
+  padding: 1em;
+  font-size: 1.25em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  transition: all 0.25s ease-in-out;
+}
+
+.box b a:hover {
+  background: rgb(55,31,56);
+  transition: all 0.25s ease-in-out;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 2px solid rgb(141,11,59);
+  display: inline-block;
+  padding: 0 0.25em;
+}
+
+.box a:hover {
+  border-color: rgb(55,31,56);
+}
+
+.box a i {
+  color: lightgrey;
+}
+
+.box a:hover i {
+  color: rgb(55,31,56);
+}
+
+.box .more p {
+  margin-bottom: 1em;
+}
+
+.box .more p:last-child {
+  margin-bottom: 0;
+}
+
+.more {
+  margin-top: 2em;
+}
+
+.supporters {
+  display: block;
+  margin-top: 1.5em;
+  overflow: auto;
+}
+
+.supporters img {
+  width: 25%;
+  float: left;
+  display: block;
+}
+
+footer {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  margin: 0 0.5em;
+  border-color: rgb(141,11,59);
+}
+
+footer a:hover {
+  border-color: rgb(55,31,56);
+}
+
+@media screen and (max-width: 720px) {
+  img.welcome {
+    margin: 2em 0;
+  }
+  .box {
+    padding: 1em;
+  }
+  .box li {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .box b a {
+    font-size: 1em;
+  }
+}
