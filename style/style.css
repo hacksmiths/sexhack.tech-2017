@@ -13,6 +13,7 @@ body {
   background: url(/img/background.svg);
   background-size: 20rem;
   font-size: 1.25rem;
+  padding: 1rem;
 }
 
 .box {
@@ -47,6 +48,7 @@ a.button {
   margin-right: 1rem;
   border-radius: 5px;
   font-size: 1rem;
+  margin-top: 1rem;
 }
 
 .divider {
@@ -64,4 +66,14 @@ a.button {
 
 h2 {
   margin-bottom: 1em;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 1rem;
+  }
+  .box {
+    padding: 1rem;
+    background: rgba(255,255,255,0.8);
+  }
 }
